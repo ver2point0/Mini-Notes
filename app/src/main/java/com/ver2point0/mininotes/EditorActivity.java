@@ -40,6 +40,7 @@ public class EditorActivity extends AppCompatActivity {
                     DBOpenHelper.ALL_COLUMNS, noteFilter, null, null);
             cursor.moveToFirst();
             oldText = cursor.getString(cursor.getColumnIndex(DBOpenHelper.NOTE_TEXT));
+            cursor.close();
             editor.setText(oldText);
             editor.requestFocus();
         }

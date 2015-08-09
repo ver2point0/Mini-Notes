@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        cursorAdapter = new NotesCursorAdapter(this, null, 0);
+        cursorAdapter = new NotesCursorAdapter(this);
 
         ListView list = (ListView) findViewById(R.id.lv_main);
         list.setAdapter(cursorAdapter);

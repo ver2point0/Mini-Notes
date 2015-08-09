@@ -10,7 +10,8 @@
         android:id="@+id/iv_doc_icon"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:src="@drawable/ic_action_document" />
+        android:src="@drawable/ic_action_document"
+        android:contentDescription="@string/note"/>
 
     <TextView
         android:id="@+id/tv_note"
@@ -22,7 +23,7 @@
         android:layout_toEndOf="@+id/iv_doc_icon"
         android:layout_toRightOf="@+id/iv_doc_icon"
         android:singleLine="true"
-        android:text="Dummy Text"
+        android:text="@string/dummy_text"
         android:textColor="@color/primary_text"
         android:textSize="18sp" />
 
