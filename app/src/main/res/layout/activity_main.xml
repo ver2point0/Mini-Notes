@@ -30,15 +30,4 @@
         android:layout_alignParentEnd="true"
         android:onClick="openEditorForNewNote"
         />
-
-    <!--<Button-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="New Note"-->
-        <!--android:id="@+id/button"-->
-        <!--android:layout_alignParentBottom="true"-->
-        <!--android:layout_alignParentRight="true"-->
-        <!--android:layout_alignParentEnd="true"-->
-        <!--android:onClick="openEditorForNewNote"/>-->
-
 </RelativeLayout>
