@@ -9,8 +9,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -41,6 +43,9 @@ public class MainActivity extends AppCompatActivity implements
     private void insertNote(String noteText) {
         ContentValues values = new ContentValues();
         values.put(DBOpenHelper.NOTE_TEXT, noteText);
+        Uri noteUri = getContentResolver().insert(NotesProvider.CONTENT_URI,
+                values);
+        Log.d("MainActivity", "Inserted note " + noteUri.getLastPathSegment());
     }
 
     @Override
